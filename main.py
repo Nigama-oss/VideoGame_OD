@@ -24,8 +24,10 @@ if max_val >= threshold:
 
     cv.rectangle(haystack_img, top_left, bottom_right, (0, 255, 0), thickness=2, lineType=cv.LINE_4)
     
-    cv.imshow('Result', haystack_img)
-    cv.waitKey()
+    #cv.imshow('Result', haystack_img)
+    #cv.waitKey()
+
+    cv.imwrite('result.jpg', haystack_img)
 
 else:
     print("Needle not found.")
